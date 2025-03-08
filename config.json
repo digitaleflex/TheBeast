@@ -1,0 +1,55 @@
+{
+    "version": "2.1",
+    "settings": {
+        "backup": {
+            "createRestorePoint": true,
+            "backupRegistry": true,
+            "keepBackupDays": 7
+        },
+        "optimization": {
+            "cpu": {
+                "enabled": true,
+                "priorityBoost": true,
+                "powerPlan": "Ultimate Performance"
+            },
+            "memory": {
+                "enabled": true,
+                "pagefile": {
+                    "autoManage": false,
+                    "multiplier": 1.5
+                }
+            },
+            "network": {
+                "enabled": true,
+                "tcpOptimization": true,
+                "dnsOptimization": true,
+                "disableSmb1": true
+            },
+            "security": {
+                "enabled": true,
+                "defender": {
+                    "realTimeProtection": true,
+                    "controlledFolderAccess": true,
+                    "networkProtection": true,
+                    "puaProtection": true
+                }
+            },
+            "cleanup": {
+                "enabled": true,
+                "tempFiles": true,
+                "oldFilesAge": 7,
+                "diskCleanup": true
+            }
+        },
+        "monitoring": {
+            "resourceTracking": true,
+            "errorThreshold": 5,
+            "warningThreshold": 10
+        },
+        "reporting": {
+            "detailedLogs": true,
+            "compareBeforeAfter": true,
+            "statisticsReport": true
+        }
+    }
+} 
